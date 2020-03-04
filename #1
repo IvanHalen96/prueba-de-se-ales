@@ -1,0 +1,37 @@
+
+void setup()
+{
+Serial.begin(9600);
+pinMode(A0,INPUT); 
+//pinMode(A1,INPUT); 
+pinMode(A2,INPUT); 
+//pinMode(A3,INPUT); 
+pinMode(A4,INPUT); 
+pinMode(12,INPUT);
+pinMode(8,INPUT);
+pinMode(6,INPUT);
+pinMode(4,INPUT);
+}
+void loop() //Definimos nuestra secuencia.
+{
+  Serial.print("El valor A0 es: ");
+  Serial.println(analogRead(A0));
+//  Serial.print("El valor A1 es: ");
+//  Serial.println(analogRead(A1));
+  Serial.print("El valor A2 es: ");
+  Serial.println(analogRead(A2));
+//  Serial.print("El valor A3 es: ");
+//  Serial.println(analogRead(A3));
+  Serial.print("El valor A4 es: ");
+  Serial.println(analogRead(A4));
+  Serial.print("El valor B1 es: ");
+  Serial.println(digitalRead(12));
+  Serial.print("El valor B2 es: ");
+  Serial.println(digitalRead(8));
+  Serial.print("El valor B3 es: ");
+  Serial.println(digitalRead(6));
+  Serial.print("El valor B4 es: ");
+  Serial.println(digitalRead(4));
+
+delay(100);
+}
